@@ -24,6 +24,9 @@
         <activity android:name=".ui.MainMenuActivity" />
         <activity android:name=".ui.LobbyActivity" />
         <activity android:name=".ui.GameActivity" />
+        <activity android:name=".ui.ProfileActivity" />
+        <activity android:name=".ui.PlayLocalActivity" />
+
     </application>
 
 </manifest>

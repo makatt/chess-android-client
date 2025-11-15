@@ -14,5 +14,13 @@ class MainMenuActivity : AppCompatActivity() {
         findViewById<Button>(R.id.btnPlayOnline).setOnClickListener {
             startActivity(Intent(this, LobbyActivity::class.java))
         }
+        findViewById<Button>(R.id.btnPlayLocal).setOnClickListener {
+            startActivity(Intent(this, PlayLocalActivity::class.java))
+        }
+
+        findViewById<Button>(R.id.btnProfile).setOnClickListener {
+            startActivity(Intent(this, ProfileActivity::class.java))
+        }
+
     }
 }

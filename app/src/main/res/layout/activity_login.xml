@@ -1,44 +1,64 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="24dp"
-    android:gravity="center"
-    tools:context=".ui.LoginActivity">
+    android:background="@color/chess_bg_light"
+    android:padding="24dp">
 
-    <TextView
-        android:text="Вход в шахматы"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="24dp"
-        android:gravity="center"
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content">
 
-    <EditText
-        android:id="@+id/etUsername"
-        android:hint="Имя пользователя"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/ic_chess_logo"
+            android:contentDescription="Логотип" />
 
-    <EditText
-        android:id="@+id/etPassword"
-        android:hint="Пароль"
-        android:inputType="textPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
 
-    <Button
-        android:id="@+id/btnLogin"
-        android:text="Войти"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"/>
+        <TextView
+            android:text="Вход в систему"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/chess_primary"
+            android:layout_marginBottom="16dp" android:layout_height="wrap_content" android:layout_width="wrap_content"/>
 
-    <Button
-        android:id="@+id/btnRegister"
-        android:text="Регистрация"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-</LinearLayout>
+        <EditText
+            android:id="@+id/etUsername"
+            android:hint="Имя пользователя"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_input"
+            android:padding="12dp"/>
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:hint="Пароль"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_input"
+            android:padding="12dp"/>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:text="Войти"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/chess_primary"
+            android:textColor="@color/chess_text_light"/>
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:text="Регистрация"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/chess_accent"
+            android:textColor="@color/chess_text_light"/>
+    </LinearLayout>
+</ScrollView>

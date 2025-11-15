@@ -1,23 +1,27 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1E1E1E"
+    android:background="@color/chess_primary"
     android:gravity="center">
+
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_centerInParent="true"
-        android:contentDescription="Логотип"/>
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:contentDescription="Логотип"
+        android:src="@drawable/ic_chess_logo" />
+
 
     <TextView
         android:layout_below="@id/logo"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Chess Online"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        android:textStyle="bold" android:layout_height="wrap_content" android:layout_width="wrap_content"/>
-
+        android:textColor="@color/chess_text_light"
+        android:textSize="22sp"
+        android:textStyle="bold" />
 </RelativeLayout>

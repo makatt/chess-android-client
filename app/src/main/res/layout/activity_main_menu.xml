@@ -1,32 +1,48 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:gravity="center"
+    android:background="@color/chess_bg_light"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="24dp">
+    android:padding="32dp">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_chess_logo"
+        android:contentDescription="Логотип" />
+
 
     <TextView
         android:text="Главное меню"
+        android:textColor="@color/chess_primary"
         android:textSize="22sp"
         android:textStyle="bold"
-        android:layout_marginBottom="24dp" android:layout_height="24dp" android:layout_width="24dp"/>
+        android:layout_marginBottom="24dp" android:layout_height="wrap_content" android:layout_width="wrap_content"/>
 
     <Button
         android:id="@+id/btnPlayOnline"
         android:text="Играть онлайн"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/chess_primary"
+        android:textColor="@color/chess_text_light"/>
 
     <Button
         android:id="@+id/btnPlayLocal"
         android:text="Игра с другом"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/chess_accent"
+        android:textColor="@color/chess_text_light"/>
 
     <Button
         android:id="@+id/btnProfile"
         android:text="Профиль"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/chess_secondary"
+        android:textColor="@color/chess_text_dark"/>
 </LinearLayout>

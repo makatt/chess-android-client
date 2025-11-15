@@ -3,6 +3,7 @@ package com.example.chessapp.ui
 import android.graphics.Color
 import android.os.Bundle
 import android.widget.GridLayout
+import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -15,6 +16,7 @@ import kotlinx.coroutines.launch
 class GameActivity : AppCompatActivity() {
 
     private lateinit var grid: GridLayout
+    private lateinit var btnback : ImageButton
     private lateinit var statusText: TextView
     private val board = Array(8) { arrayOfNulls<Piece>(8) }
     private var selectedCell: String? = null
@@ -26,6 +28,11 @@ class GameActivity : AppCompatActivity() {
 
         grid = findViewById(R.id.chessBoard)
         statusText = findViewById(R.id.statusText)
+        btnback = findViewById(R.id.btnBack)
+
+        btnback.setOnClickListener {
+            finish()
+        }
 
         initBoard()
         drawBoard()
@@ -56,9 +63,9 @@ class GameActivity : AppCompatActivity() {
                 val tag = "${'a' + col}${8 - row}"
                 cell.tag = tag
                 val color = if ((row + col) % 2 == 0)
-                    Color.parseColor("#EEEED2")
+                    Color.parseColor("#fbf5de")
                 else
-                    Color.parseColor("#769656")
+                    Color.parseColor("#4b4847")
                 cell.setBackgroundColor(color)
                 cell.adjustViewBounds = true
                 cell.scaleType = ImageView.ScaleType.CENTER_INSIDE

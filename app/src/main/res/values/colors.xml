@@ -2,4 +2,13 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="chess_bg_light">#F8F5E9</color>     <!-- основной бежевый фон -->
+    <color name="chess_card">#FFFDF7</color>         <!-- карточки / поля -->
+    <color name="chess_accent">#B59F7B</color>       <!-- тёплый золотистый -->
+    <color name="chess_primary">#7B614D</color>      <!-- тёмно-коричневый -->
+    <color name="chess_secondary">#C6B89E</color>    <!-- дополнительный -->
+    <color name="chess_text_dark">#3E3225</color>    <!-- цвет текста -->
+    <color name="chess_text_light">#FFFFFF</color>   <!-- белый текст -->
+
+
 </resources>
